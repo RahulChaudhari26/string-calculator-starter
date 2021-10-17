@@ -29,4 +29,8 @@ class StringCalculatorShould {
 	   public void multipleDelimiterReturnSum() throws Exception {
 		   	assertEquals(stringCalculator.add("1;2"),3);
 		   }
+	   
+	   public void string_with_single_number_should_return_number_as_int() throws Exception {
+	       assertEquals(stringCalculator.add("1"),1);
+	   }
 }
