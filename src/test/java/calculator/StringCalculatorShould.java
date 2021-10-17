@@ -17,6 +17,12 @@ class StringCalculatorShould {
    public void empty_string_should_return_0() throws Exception {
         assertEquals(stringCalculator.add(""),0);   
     }
+   public void twoNumbersCommaDelimitedReturnSum()throws Exception {
+	   	assertEquals(stringCalculator.add("1,2"),3);
+	   }
+	   public void twoNumbersNewLineDelimitedReturnSum()throws Exception {
+	   	assertEquals(stringCalculator.add("1\n2"),3);
+	   }
   
 
 }
